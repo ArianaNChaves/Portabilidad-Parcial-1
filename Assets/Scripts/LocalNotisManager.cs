@@ -1,11 +1,15 @@
 using System;
-using System.Collections;
-using Unity.Notifications.Android;
 using UnityEngine;
+
+#if UNITY_ANDROID
+using Unity.Notifications.Android;
 using UnityEngine.Android;
+#endif
+using System.Collections;
 
 public class LocalNotisManager : MonoBehaviour
 {
+    #if (UNITY_ANDROID || UNITY_IOS)
     private const string CHANNEL_ID = "notis01";
     private const string CHANNEL_CREATED_KEY = "NotiChannels_Created";
 
@@ -63,4 +67,5 @@ public class LocalNotisManager : MonoBehaviour
 
         AndroidNotificationCenter.SendNotification(notif, CHANNEL_ID);
     }
+#endif
 }

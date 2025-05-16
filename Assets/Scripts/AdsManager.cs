@@ -1,28 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
 public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
 {
-    public BannerManager banner;
+    public BannerManager    banner;
     public InterstitialManager interstitial;
-    public RewardedAdManager rewardedAd;
+    public RewardedAdManager   rewardedAd;
 
     private string _gameId;
-
-    public void OnInitializationComplete()
-    {
-        Debug.Log("Unity Ads initialization complete.");
-        banner.Show();
-        interstitial.Initialize();
-        rewardedAd.Initialize();
-    }
-
-    public void OnInitializationFailed(UnityAdsInitializationError error, string message)
-    {
-        Debug.Log($"Unity Ads Initialization Failed: {error.ToString()} - {message}");
-    }
 
     void Awake()
     {
@@ -30,14 +15,28 @@ public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
         _gameId = "5855867";
 #elif UNITY_ANDROID
         _gameId = "5855866";
-#elif UNITY_EDITOR
-        _gameId = "5629780";
 #endif
-    
-        if(!Advertisement.isInitialized && Advertisement.isSupported)
-        {
-            Advertisement.Initialize(_gameId, true, this);
-        }
 
+#if (UNITY_ANDROID || UNITY_IOS)
+        if (!Advertisement.isInitialized && Advertisement.isSupported)
+            Advertisement.Initialize(_gameId, true, this);
+#endif
+    }
+
+    public void OnInitializationComplete()
+    {
+#if (UNITY_ANDROID || UNITY_IOS)
+        Debug.Log("Unity Ads initialization complete.");
+        banner.Show();
+        interstitial.Initialize();
+        rewardedAd.Initialize();
+#endif
+    }
+
+    public void OnInitializationFailed(UnityAdsInitializationError error, string message)
+    {
+#if (UNITY_ANDROID || UNITY_IOS)
+        Debug.Log($"Unity Ads Initialization Failed: {error} - {message}");
+#endif
     }
 }

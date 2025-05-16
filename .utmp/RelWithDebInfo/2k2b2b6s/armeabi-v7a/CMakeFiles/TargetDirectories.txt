@@ -1,0 +1,8 @@
+D:/Portabilidad/Portabilidad-Parcial-1/.utmp/RelWithDebInfo/2k2b2b6s/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/Portabilidad/Portabilidad-Parcial-1/.utmp/RelWithDebInfo/2k2b2b6s/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+D:/Portabilidad/Portabilidad-Parcial-1/.utmp/RelWithDebInfo/2k2b2b6s/armeabi-v7a/GameActivity/CMakeFiles/game.dir
+D:/Portabilidad/Portabilidad-Parcial-1/.utmp/RelWithDebInfo/2k2b2b6s/armeabi-v7a/GameActivity/CMakeFiles/edit_cache.dir
+D:/Portabilidad/Portabilidad-Parcial-1/.utmp/RelWithDebInfo/2k2b2b6s/armeabi-v7a/GameActivity/CMakeFiles/rebuild_cache.dir
+D:/Portabilidad/Portabilidad-Parcial-1/.utmp/RelWithDebInfo/2k2b2b6s/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
+D:/Portabilidad/Portabilidad-Parcial-1/.utmp/RelWithDebInfo/2k2b2b6s/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
+D:/Portabilidad/Portabilidad-Parcial-1/.utmp/RelWithDebInfo/2k2b2b6s/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir

@@ -6,11 +6,11 @@ using UnityEngine.Advertisements;
 
 public class BannerManager : MonoBehaviour
 {
+    #if (UNITY_ANDROID || UNITY_IOS)
     [SerializeField] string _androidAdUnitId = "Banner_Android";
     [SerializeField] string _iOSAdUnitId = "Banner_iOS";
     string _adUnitId = null;
 
-    // Start is called before the first frame update
     void Start()
     {
 #if UNITY_IOS
@@ -41,4 +41,5 @@ public class BannerManager : MonoBehaviour
     {
         Debug.Log($"Banner Error: {message}");
     }
+#endif
 }
