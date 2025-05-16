@@ -1,0 +1,3 @@
+D:\Portabilidad\Portabilidad-Parcial-1\Port-Unity6\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+D:\Portabilidad\Portabilidad-Parcial-1\Port-Unity6\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\FramePacing\CMakeLists.txt
+D:\Portabilidad\Portabilidad-Parcial-1\Port-Unity6\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
